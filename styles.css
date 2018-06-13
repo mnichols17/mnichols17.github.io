@@ -1,0 +1,44 @@
+  background {
+    margin: auto;
+  }
+  body {
+    margin: auto;
+    width: 50%;
+  }
+  .body{
+    text-align: center;
+    padding: 0px;
+    margin-top: 65px;
+    color: navy;
+  }
+  .body h1 {
+    font-size: 90px;
+    margin: 0;
+  }
+  p {
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 18px;
+  }
+  #photoSelf {
+    border-radius: 50%;
+    border: solid 2px navy;
+    margin: 40px;
+  }
+  ul {
+    list-style-type: none;
+    text-align: center;
+    padding-left: 0px;
+  }
+  li {
+    display: inline-block;
+    padding: 15px;
+    font-size: 20px;
+  }
+  a {
+    color: navy;
+  }
+  a:hover {
+    color: #0AB9D8;
+    text-decoration: none;
+  }
