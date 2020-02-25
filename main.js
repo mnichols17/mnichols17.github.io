@@ -23,7 +23,8 @@ function load() {
 }
 
 function size() {
-    if (screen.width > 500){
+    console.log(window.innerWidth)
+    if (window.innerWidth >= 500){
         document.getElementById("details").innerHTML = "<p>Web & Information Systems - New Jersey Institute of Technology</p>"
     } else {
         document.getElementById("details").innerHTML = "<p>Web & Information Systems</p><p>New Jersey Institute of Technology</p>"
