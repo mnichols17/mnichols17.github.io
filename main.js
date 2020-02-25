@@ -1,29 +1,31 @@
-function loadFunction() {
-  document.getElementById("body").style.visibility = "hidden";
-  document.getElementById("break").style.visibility = "hidden";
-  document.getElementById("footer").style.visibility = "hidden";
+function load() {
+    size();
+    setTimeout(() => {
+        document.getElementById('heading').style.visibility = "visible";
+        $('#heading').addClass('animated fadeInDown');
+    }, 500)
+    setTimeout(() => {
+        document.getElementById('photo').style.visibility = "visible";
+        $('#photo').addClass('animated fadeInDown');
+    }, 600)
     setTimeout(function(){
-      document.getElementById("name").style.visibility = "visible";
-      $('#name').addClass('animated fadeInDown');
-    }, 500);
-    setTimeout(function(){
-      document.getElementById("photoSelf").style.visibility = "visible";
-      $("#photoSelf").addClass('animated fadeInDown');
-    }, 600);
-    setTimeout(function(){
-      document.getElementById("major").style.visibility = "visible";
-      $("#major").addClass('animated fadeIn');
+        document.getElementById("details").style.visibility = "visible";
+        $("#details").addClass('animated fadeIn');
     }, 1250);
     setTimeout(function(){
-      document.getElementById("school").style.visibility = "visible";
-      $("#school").addClass('animated fadeIn');
-    }, 1350);
-    setTimeout(function(){
-      document.getElementById("break").style.visibility = "visible";
-      $("hr").addClass('animated fadeIn');
+        document.getElementById("break").style.visibility = "visible";
+        $("hr").addClass('animated fadeIn');
     }, 1400);
     setTimeout(function(){
-      document.getElementById("footer").style.visibility = "visible";
-      $("#footer").addClass('animated fadeInUp');
+        document.getElementById("links").style.visibility = "visible";
+        $("#links").addClass('animated fadeInUp');
     }, 1400);
+}
+
+function size() {
+    if (screen.width > 500){
+        document.getElementById("details").innerHTML = "<p>Web & Information Systems - New Jersey Institute of Technology</p>"
+    } else {
+        document.getElementById("details").innerHTML = "<p>Web & Information Systems</p><p>New Jersey Institute of Technology</p>"
+    }
 }
