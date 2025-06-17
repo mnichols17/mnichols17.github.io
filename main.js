@@ -1,12 +1,12 @@
 function load() {
   size();
   setTimeout(() => {
-    document.getElementById("heading").style.visibility = "visible";
-    $("#heading").addClass("animated fadeInDown");
+    document.getElementById("name").style.visibility = "visible";
+    $("#name").addClass("animated fadeInDown");
   }, 500);
   setTimeout(() => {
-    document.getElementById("photo").style.visibility = "visible";
-    $("#photo").addClass("animated fadeInDown");
+    document.getElementById("avatar").style.visibility = "visible";
+    $("#avatar").addClass("animated fadeInDown");
   }, 600);
   setTimeout(function () {
     document.getElementById("details").style.visibility = "visible";
